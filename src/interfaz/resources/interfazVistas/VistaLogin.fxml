@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="600.0" style="-fx-background-color: #f4e4c1;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.interfazControllers.LoginController">
+   <children>
+      <HBox alignment="CENTER" prefHeight="121.0" prefWidth="600.0">
+         <children>
+            <Label alignment="CENTER" prefHeight="263.0" prefWidth="871.0" style="-fx-border-color: #8b5a2b; -fx-background-color: #d7b899; -fx-border-width: 3; -fx-text-fill: #6b4226;" text="+++ SCRABBLE +++" textAlignment="CENTER">
+               <font>
+                  <Font size="30.0" />
+               </font>
+               <padding>
+                  <Insets top="40.0" />
+               </padding>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="489.0" prefWidth="837.0">
+         <children>
+            <VBox prefHeight="460.0" prefWidth="515.0">
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="0.0" prefWidth="515.0">
+                     <children>
+                        <Label prefHeight="34.0" prefWidth="264.0" style="-fx-text-fill: #6b4226;" text="Alias Jugador 1">
+                           <font>
+                              <Font size="25.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="30.0" right="50.0" top="30.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Label prefHeight="31.0" prefWidth="219.0" style="-fx-text-fill: #6b4226;" text="Alias Jugador 2">
+                           <font>
+                              <Font size="25.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets right="10.0" top="30.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <TextField fx:id="textJugador1" prefHeight="30.0" prefWidth="154.0" style="-fx-background-color: #f8ecc2; -fx-border-color: #8b5a2b; -fx-border-width: 2;">
+                           <HBox.margin>
+                              <Insets left="40.0" right="130.0" />
+                           </HBox.margin>
+                        </TextField>
+                        <TextField fx:id="textJugador2" layoutX="40.0" layoutY="21.0" prefHeight="30.0" prefWidth="154.0" style="-fx-background-color: #f8ecc2; -fx-border-color: #8b5a2b; -fx-border-width: 2;">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="211.0" prefWidth="514.0">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#onIniciar" prefHeight="71.0" prefWidth="114.0" style="-fx-background-color: #8b5a2b; -fx-text-fill: #ffffff; -fx-font-size: 18px; -fx-border-radius: 5;" text="Iniciar">
+                           <HBox.margin>
+                              <Insets right="20.0" />
+                           </HBox.margin></Button>
+                        <Button mnemonicParsing="false" onAction="#onSalir" prefHeight="70.0" prefWidth="120.0" style="-fx-background-color: #8b5a2b; -fx-text-fill: #ffffff; -fx-font-size: 18px; -fx-border-radius: 5;" text="Salir" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</VBox>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" prefHeight="469.0" prefWidth="439.0" spacing="20"
+      style="-fx-padding: 20; -fx-background-color: #fff5e6;"
+      xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.interfazControllers.GanadorController">
+
+    <!-- Etiqueta principal de felicitación -->
+    <Label fx:id="nombre" style="-fx-font-size: 24; -fx-font-weight: bold; -fx-text-fill: #6b4226;"
+           text="Ganador: Nombre" />
+
+    <!-- Etiqueta para puntos del jugador 1 -->
+    <Label fx:id="puntos1" style="-fx-font-size: 18; -fx-text-fill: #6b4226;"
+           text="Puntos del Jugador 1: 0" />
+
+    <!-- Etiqueta para puntos del jugador 2 -->
+    <Label fx:id="puntos2" style="-fx-font-size: 18; -fx-text-fill: #6b4226;"
+           text="Puntos del Jugador 2: 0" />
+
+    <!-- Etiqueta para palabras jugadas por el jugador 1 -->
+    <Label fx:id="palabras1" style="-fx-font-size: 18; -fx-text-fill: #6b4226;"
+           text="Palabras Jugadas por Jugador 1: 0" />
+
+    <!-- Etiqueta para palabras jugadas por el jugador 2 -->
+    <Label fx:id="palabras2" style="-fx-font-size: 18; -fx-text-fill: #6b4226;"
+           text="Palabras Jugadas por Jugador 2: 0" />
+
+    <!-- Etiqueta para el tiempo de la partida -->
+    <Label fx:id="tiempo" style="-fx-font-size: 18; -fx-text-fill: #6b4226;"
+           text="Tiempo de Partida: 0" />
+
+    <!-- Botón para salir del juego -->
+    <Button fx:id="btnExitGame" style="-fx-font-size: 14; -fx-background-color: linear-gradient(to bottom, #d32f2f, #c62828); -fx-text-fill: white; -fx-background-radius: 10;"
+            text="Salir" onAction="#onButtonSalir" />
+
+</VBox>

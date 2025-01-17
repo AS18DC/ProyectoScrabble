@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="523.0" prefWidth="601.0" style="-fx-background-color: linear-gradient(to bottom, #f9f4e8, #f4e4c1); -fx-padding: 20;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.interfazControllers.PartidasMenuController">
+   <children>
+      <!-- Cabecera -->
+      <HBox alignment="CENTER" prefHeight="31.0" prefWidth="560.0" style="-fx-background-color: #d7b899; -fx-border-color: #8b5a2b; -fx-border-width: 2; -fx-border-radius: 10; -fx-background-radius: 10;">
+         <children>
+            <Label prefHeight="88.0" prefWidth="282.0" style="-fx-font-size: 30px; -fx-font-weight: bold; -fx-text-fill: #6b4226; -fx-padding: 15;" text="Menú de Juego">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+         </children>
+         <VBox.margin>
+            <Insets bottom="30.0" />
+         </VBox.margin>
+      </HBox>
+
+      <!-- Contenedor de botones -->
+      <HBox alignment="CENTER" prefHeight="701.0" prefWidth="600.0">
+         <children>
+            <Label prefHeight="357.0" prefWidth="32.0" text="/">
+               <font>
+                  <Font size="120.0" />
+               </font>
+            </Label>
+            <VBox alignment="TOP_CENTER" prefHeight="378.0" prefWidth="234.0" spacing="20.0" style="-fx-background-color: #ffffff; -fx-padding: 20; -fx-border-color: #8b5a2b; -fx-border-width: 2; -fx-border-radius: 15; -fx-background-radius: 15; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.15), 8, 0.5, 0, 3);">
+
+               <!-- Botón Nueva juego -->
+               <Button mnemonicParsing="false" onAction="#onButtonNuevoJuego" prefHeight="90.0" prefWidth="200.0" style="-fx-background-color: linear-gradient(to bottom, #8b5a2b, #70461f); -fx-text-fill: #ffffff; -fx-font-weight: bold; -fx-background-radius: 10;" text="Nuevo Juego" />
+
+               <!-- Espacio entre botones -->
+               <Region prefHeight="0.0" prefWidth="191.0" style="-fx-border-color: #3d3d3d;" />
+
+               <!-- Botón Continuar juego -->
+               <Button mnemonicParsing="false" onAction="#onButtonContinuarJuego" prefHeight="90.0" prefWidth="200.0" style="-fx-background-color: linear-gradient(to bottom, #8b5a2b, #70461f); -fx-text-fill: #ffffff; -fx-font-weight: bold; -fx-background-radius: 10;" text="Continuar Juego" />
+
+               <!-- Espacio entre botones -->
+               <Region prefHeight="0.0" prefWidth="191.0" style="-fx-border-color: #3d3d3d;" />
+
+               <!-- Botón Estadísticas -->
+               <Button fx:id="buttonEstadisticas" mnemonicParsing="false" onAction="#onButtonEstadisticas" prefHeight="90.0" prefWidth="200.0" style="-fx-background-color: linear-gradient(to bottom, #8b5a2b, #70461f); -fx-text-fill: #ffffff; -fx-font-weight: bold; -fx-background-radius: 10;" text="Estadísticas" />
+
+               <!-- Espacio entre botones -->
+               <Region prefHeight="0.0" prefWidth="191.0" style="-fx-border-color: #3d3d3d;" />
+
+               <!-- Botón Regresar -->
+               <Button mnemonicParsing="false" onAction="#onButtonRegresar" prefHeight="100.0" prefWidth="121.0" style="-fx-background-color: linear-gradient(to bottom, #8b5a2b, #70461f); -fx-text-fill: #ffffff; -fx-font-weight: bold; -fx-background-radius: 10;" text="Regresar" />
+
+            </VBox>
+            <Label layoutX="138.0" layoutY="157.0" prefHeight="348.0" prefWidth="47.0" text="\\">
+               <font>
+                  <Font size="120.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+   </children>
+</VBox>

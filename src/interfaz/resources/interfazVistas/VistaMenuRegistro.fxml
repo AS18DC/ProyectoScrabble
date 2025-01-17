@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="600.0" style="-fx-background-color: linear-gradient(to bottom, #f9f4e8, #f4e4c1); -fx-padding: 20;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.interfazControllers.JugadorRegistrarController">
+   <children>
+      <!-- Cabecera -->
+      <HBox alignment="CENTER" prefHeight="100.0" style="-fx-background-color: #d7b899; -fx-border-color: #8b5a2b; -fx-border-width: 2; -fx-border-radius: 10; -fx-background-radius: 10;">
+         <children>
+            <Label style="-fx-font-size: 30px; -fx-font-weight: bold; -fx-text-fill: #6b4226; -fx-padding: 15;" text="Registro de Jugador">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+         </children>
+         <VBox.margin>
+            <Insets bottom="20.0" />
+         </VBox.margin>
+      </HBox>
+
+      <!-- Contenedor de campos y botones -->
+      <HBox alignment="CENTER" prefHeight="513.0" prefWidth="600.0">
+         <children>
+            <VBox alignment="TOP_CENTER" spacing="20.0" style="-fx-background-color: #ffffff; -fx-padding: 20; -fx-border-color: #8b5a2b; -fx-border-width: 2; -fx-border-radius: 15; -fx-background-radius: 15; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.15), 8, 0.5, 0, 3);">
+
+               <!-- Campo de Nombre de Usuario -->
+               <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="420.0" spacing="10.0">
+                  <children>
+                     <Label style="-fx-font-size: 25px; -fx-text-fill: #6b4226;" text="Nombre de Usuario:" />
+                     <TextField fx:id="textNombreDeUsuario" prefHeight="25.0" prefWidth="245.0" style="-fx-border-color: #d7b899; -fx-background-radius: 5;" />
+                  </children>
+               </HBox>
+
+               <!-- Campo de Correo de Usuario -->
+               <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="420.0" spacing="10.0">
+                  <children>
+                     <Label alignment="CENTER_RIGHT" prefHeight="31.0" prefWidth="248.0" style="-fx-font-size: 25px; -fx-text-fill: #6b4226;" text="Correo de Usuario:" />
+                     <TextField fx:id="textCorreoDeUsuario" prefHeight="27.0" prefWidth="246.0" style="-fx-border-color: #d7b899; -fx-background-radius: 5;" />
+                  </children>
+               </HBox>
+
+               <!-- Botones -->
+               <HBox alignment="CENTER" prefHeight="211.0" prefWidth="514.0" spacing="20.0">
+                  <children>
+                     <Button mnemonicParsing="false" onAction="#onButtonGuardarUsuario" prefHeight="56.0" prefWidth="154.0" style="-fx-background-color: linear-gradient(to bottom, #8b5a2b, #70461f); -fx-text-fill: #ffffff; -fx-font-weight: bold; -fx-background-radius: 10;" text="Guardar Usuario" />
+                     <Button mnemonicParsing="false" onAction="#onButtonRegresar" prefHeight="56.0" prefWidth="103.0" style="-fx-background-color: linear-gradient(to bottom, #8b5a2b, #70461f); -fx-text-fill: #ffffff; -fx-font-weight: bold; -fx-background-radius: 10;" text="Regresar" />
+                  </children>
+               </HBox>
+
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</VBox>

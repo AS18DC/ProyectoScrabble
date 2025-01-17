@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: linear-gradient(to bottom, #f9f4e8, #f4e4c1); -fx-padding: 20;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.interfazControllers.JugadorModificarController">
+   <children>
+      <!-- Cabecera -->
+      <HBox alignment="CENTER" prefHeight="100.0" style="-fx-background-color: #d7b899; -fx-border-color: #8b5a2b; -fx-border-width: 2; -fx-border-radius: 10; -fx-background-radius: 10;">
+         <children>
+            <Label style="-fx-font-size: 30px; -fx-font-weight: bold; -fx-text-fill: #6b4226; -fx-padding: 15;" text="Jugador a Modificar...">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+         </children>
+         <VBox.margin>
+            <Insets bottom="30.0" />
+         </VBox.margin>
+      </HBox>
+
+      <!-- Contenedor principal -->
+      <HBox alignment="CENTER" prefHeight="358.0" prefWidth="600.0">
+         <children>
+            <VBox alignment="TOP_CENTER" spacing="20.0" style="-fx-background-color: #ffffff; -fx-padding: 20; -fx-border-color: #8b5a2b; -fx-border-width: 2; -fx-border-radius: 15; -fx-background-radius: 15; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.15), 8, 0.5, 0, 3);">
+
+               <!-- Campo de Alias -->
+               <HBox alignment="CENTER_LEFT" prefHeight="70.0" prefWidth="420.0" spacing="10.0">
+                  <children>
+                     <Label alignment="TOP_RIGHT" prefHeight="32.0" prefWidth="121.0" style="-fx-font-size: 20px; -fx-text-fill: #6b4226;" text="Alias:" textAlignment="RIGHT">
+                        <HBox.margin>
+                           <Insets />
+                        </HBox.margin></Label>
+                     <TextField fx:id="textAlias" prefHeight="27.0" prefWidth="217.0" style="-fx-border-color: #d7b899; -fx-background-radius: 5;" />
+                  </children>
+               </HBox>
+
+               <!-- Campo de Correo -->
+               <HBox alignment="CENTER_LEFT" prefHeight="70.0" prefWidth="420.0" spacing="10.0">
+                  <children>
+                     <Label alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="119.0" style="-fx-font-size: 20px; -fx-text-fill: #6b4226;" text="Correo:" />
+                     <TextField fx:id="textEmail" prefHeight="26.0" prefWidth="228.0" style="-fx-border-color: #d7b899; -fx-background-radius: 5;" />
+                  </children>
+               </HBox>
+
+               <!-- Botones -->
+               <HBox alignment="CENTER" prefHeight="70.0" spacing="20.0">
+                  <children>
+                     <Button mnemonicParsing="false" onAction="#onButtonLeer" prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: linear-gradient(to bottom, #8b5a2b, #70461f); -fx-text-fill: #ffffff; -fx-font-weight: bold; -fx-background-radius: 10;" text="Leer" />
+                     <Button mnemonicParsing="false" onAction="#onButtonModificar" prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: linear-gradient(to bottom, #8b5a2b, #70461f); -fx-text-fill: #ffffff; -fx-font-weight: bold; -fx-background-radius: 10;" text="Actualizar" />
+                     <Button mnemonicParsing="false" onAction="#onButtonRegresar" prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: linear-gradient(to bottom, #8b5a2b, #70461f); -fx-text-fill: #ffffff; -fx-font-weight: bold; -fx-background-radius: 10;" text="Regresar" />
+                  </children>
+               </HBox>
+
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</VBox>
