@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="appScrabble.EndGameController" spacing="20" alignment="CENTER" style="-fx-background-color: rgba(143, 173, 50, 0.8); -fx-padding: 20; -fx-spacing: 10;">
+    <children>
+        <Label fx:id="lblGanador" text="Ganador: " style="-fx-text-fill: #14241B; -fx-font-size: 16px; -fx-font-weight: bold;" />
+        <Label fx:id="lblPuntajeJugador1" text="Puntaje Jugador 1: " style="-fx-text-fill: #14241B; -fx-font-size: 16px; -fx-font-weight: bold;" />
+        <Label fx:id="lblPuntajeJugador2" text="Puntaje Jugador 2: " style="-fx-text-fill: #14241B; -fx-font-size: 16px; -fx-font-weight: bold;" />
+        <Label fx:id="lblTiempoPartida" text="Tiempo de la partida: " style="-fx-text-fill: #14241B; -fx-font-size: 16px; -fx-font-weight: bold;" />
+        <Button text="Cerrar" onAction="#handleClose" style="-fx-background-color: #68A042; -fx-text-fill: #14241B; -fx-font-size: 14px; -fx-padding: 10 20; -fx-background-radius: 10px;" />
+    </children>
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+</VBox>
