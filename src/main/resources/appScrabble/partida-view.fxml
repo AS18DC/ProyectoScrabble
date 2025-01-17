@@ -9,9 +9,9 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.shape.Rectangle?>
-<?import javafx.scene.layout.StackPane?>
 
 <BorderPane prefHeight="853.0" prefWidth="781.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="appScrabble.PartidaController">
     <!-- Sección superior: Información de los jugadores -->
@@ -69,103 +69,103 @@
                 <RowConstraints minHeight="40.0" prefHeight="40.0" />
             </rowConstraints>
             <StackPane GridPane.columnIndex="5" GridPane.rowIndex="1">
-                <Rectangle width="40" height="40" fill="green" />
+                <Rectangle fill="green" height="40" width="40" />
             </StackPane>
             <StackPane GridPane.columnIndex="9" GridPane.rowIndex="1">
-                <Rectangle width="40" height="40" fill="green" />
+                <Rectangle fill="green" height="40" width="40" />
             </StackPane>
             <StackPane GridPane.columnIndex="1" GridPane.rowIndex="5">
-                <Rectangle width="40" height="40" fill="green" />
+                <Rectangle fill="green" height="40" width="40" />
             </StackPane>
             <StackPane GridPane.columnIndex="13" GridPane.rowIndex="5">
-                <Rectangle width="40" height="40" fill="green" />
+                <Rectangle fill="green" height="40" width="40" />
             </StackPane>
             <StackPane GridPane.columnIndex="1" GridPane.rowIndex="9">
-                <Rectangle width="40" height="40" fill="green" />
+                <Rectangle fill="green" height="40" width="40" />
             </StackPane>
             <StackPane GridPane.columnIndex="13" GridPane.rowIndex="9">
-                <Rectangle width="40" height="40" fill="green" />
+                <Rectangle fill="green" height="40" width="40" />
             </StackPane>
             <StackPane GridPane.columnIndex="5" GridPane.rowIndex="13">
-                <Rectangle width="40" height="40" fill="green" />
+                <Rectangle fill="green" height="40" width="40" />
             </StackPane>
             <StackPane GridPane.columnIndex="9" GridPane.rowIndex="13">
-                <Rectangle width="40" height="40" fill="green" />
+                <Rectangle fill="green" height="40" width="40" />
             </StackPane>
             <StackPane GridPane.columnIndex="0" GridPane.rowIndex="0">
-                <Rectangle width="40" height="40" fill="red" />
+                <Rectangle fill="red" height="40" width="40" />
             </StackPane>
             <StackPane GridPane.columnIndex="7" GridPane.rowIndex="0">
-                <Rectangle width="40" height="40" fill="red" />
+                <Rectangle fill="red" height="40" width="40" />
             </StackPane>
             <StackPane GridPane.columnIndex="14" GridPane.rowIndex="0">
-                <Rectangle width="40" height="40" fill="red" />
+                <Rectangle fill="red" height="40" width="40" />
             </StackPane>
             <StackPane GridPane.columnIndex="0" GridPane.rowIndex="7">
-                <Rectangle width="40" height="40" fill="red" />
+                <Rectangle fill="red" height="40" width="40" />
             </StackPane>
             <StackPane GridPane.columnIndex="14" GridPane.rowIndex="7">
-                <Rectangle width="40" height="40" fill="red" />
+                <Rectangle fill="red" height="40" width="40" />
             </StackPane>
             <StackPane GridPane.columnIndex="0" GridPane.rowIndex="14">
-                <Rectangle width="40" height="40" fill="red" />
+                <Rectangle fill="red" height="40" width="40" />
             </StackPane>
             <StackPane GridPane.columnIndex="7" GridPane.rowIndex="14">
-                <Rectangle width="40" height="40" fill="red" />
+                <Rectangle fill="red" height="40" width="40" />
             </StackPane>
             <StackPane GridPane.columnIndex="14" GridPane.rowIndex="14">
-                <Rectangle width="40" height="40" fill="red" />
+                <Rectangle fill="red" height="40" width="40" />
             </StackPane>
             <StackPane GridPane.columnIndex="3" GridPane.rowIndex="0">
-                <Rectangle width="40" height="40" fill="blue" />
+                <Rectangle fill="blue" height="40" width="40" />
             </StackPane>
             <StackPane GridPane.columnIndex="11" GridPane.rowIndex="0">
-                <Rectangle width="40" height="40" fill="blue" />
+                <Rectangle fill="blue" height="40" width="40" />
             </StackPane>
             <StackPane GridPane.columnIndex="0" GridPane.rowIndex="3">
-                <Rectangle width="40" height="40" fill="blue" />
+                <Rectangle fill="blue" height="40" width="40" />
             </StackPane>
             <StackPane GridPane.columnIndex="14" GridPane.rowIndex="3">
-                <Rectangle width="40" height="40" fill="blue" />
+                <Rectangle fill="blue" height="40" width="40" />
             </StackPane>
             <StackPane GridPane.columnIndex="7" GridPane.rowIndex="7">
-                <Rectangle width="40" height="40" fill="blue" />
+                <Rectangle fill="blue" height="40" width="40" />
             </StackPane>
             <StackPane GridPane.columnIndex="0" GridPane.rowIndex="11">
-                <Rectangle width="40" height="40" fill="blue" />
+                <Rectangle fill="blue" height="40" width="40" />
             </StackPane>
             <StackPane GridPane.columnIndex="14" GridPane.rowIndex="11">
-                <Rectangle width="40" height="40" fill="blue" />
+                <Rectangle fill="blue" height="40" width="40" />
             </StackPane>
             <StackPane GridPane.columnIndex="3" GridPane.rowIndex="14">
-                <Rectangle width="40" height="40" fill="blue" />
+                <Rectangle fill="blue" height="40" width="40" />
             </StackPane>
             <StackPane GridPane.columnIndex="11" GridPane.rowIndex="14">
-                <Rectangle width="40" height="40" fill="blue" />
+                <Rectangle fill="blue" height="40" width="40" />
             </StackPane>
             <StackPane GridPane.columnIndex="1" GridPane.rowIndex="1">
-                <Rectangle width="40" height="40" fill="yellow" />
+                <Rectangle fill="yellow" height="40" width="40" />
             </StackPane>
             <StackPane GridPane.columnIndex="13" GridPane.rowIndex="1">
-                <Rectangle width="40" height="40" fill="yellow" />
+                <Rectangle fill="yellow" height="40" width="40" />
             </StackPane>
             <StackPane GridPane.columnIndex="5" GridPane.rowIndex="5">
-                <Rectangle width="40" height="40" fill="yellow" />
+                <Rectangle fill="yellow" height="40" width="40" />
             </StackPane>
             <StackPane GridPane.columnIndex="9" GridPane.rowIndex="5">
-                <Rectangle width="40" height="40" fill="yellow" />
+                <Rectangle fill="yellow" height="40" width="40" />
             </StackPane>
             <StackPane GridPane.columnIndex="5" GridPane.rowIndex="9">
-                <Rectangle width="40" height="40" fill="yellow" />
+                <Rectangle fill="yellow" height="40" width="40" />
             </StackPane>
             <StackPane GridPane.columnIndex="9" GridPane.rowIndex="9">
-                <Rectangle width="40" height="40" fill="yellow" />
+                <Rectangle fill="yellow" height="40" width="40" />
             </StackPane>
             <StackPane GridPane.columnIndex="1" GridPane.rowIndex="13">
-                <Rectangle width="40" height="40" fill="yellow" />
+                <Rectangle fill="yellow" height="40" width="40" />
             </StackPane>
             <StackPane GridPane.columnIndex="13" GridPane.rowIndex="13">
-                <Rectangle width="40" height="40" fill="yellow" />
+                <Rectangle fill="yellow" height="40" width="40" />
             </StackPane>
             <!-- Row 0 -->
             <Label alignment="CENTER" contentDisplay="CENTER" onMouseClicked="#handleCellClick" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: red; -fx-text-fill: white;" text="2XP" GridPane.columnIndex="0" GridPane.rowIndex="0" />

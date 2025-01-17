@@ -12,8 +12,7 @@ import javafx.scene.layout.StackPane;
 import javafx.scene.text.Text;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Rectangle;
-import javafx.scene.text.TextAlignment;
-import javafx.scene.text.TextFlow;
+
 import java.util.List;
 
 public class PartidaController {
@@ -68,17 +67,6 @@ public class PartidaController {
         this.juego = juego;
         actualizarVistaJugadores();
         actualizarLetrasJugador();
-        resaltarJugadorEnTurno(juego.esTurnoJugador1());
-    }
-
-    public void resaltarJugadorEnTurno(boolean esJugador1Turno) {
-        if (esJugador1Turno) {
-            jugador1Info.setStyle("-fx-background-color: #ebee90;");
-            jugador2Info.setStyle("");
-        } else {
-            jugador1Info.setStyle("");
-            jugador2Info.setStyle("-fx-background-color: #5f40d8;");
-        }
     }
 
     public void initialize() {
@@ -119,23 +107,16 @@ public class PartidaController {
 
             for (String letra : letras) {
                 int puntaje = juego.saco.obtenerPuntajeDeLaLetra(letra);
-                Text baseLetter = new Text(letra);
-
-                Text subscriptScore = new Text(String.valueOf(puntaje));
-                subscriptScore.setStyle("-fx-font-size: 10; -fx-translate-y: 5;");
-                TextFlow textFlow = new TextFlow(baseLetter, subscriptScore);
-                textFlow.setTextAlignment(TextAlignment.CENTER);
-
-                Button botonFicha = new Button();
-                botonFicha.setGraphic(textFlow);
+                Button botonFicha = new Button(letra + " (" + puntaje + ")");
                 botonFicha.setPrefSize(50, 50);
-                botonFicha.setStyle("-fx-font-size: 18;");
+                botonFicha.setStyle("-fx-font-size: 14;");
                 botonFicha.setOnAction(e -> seleccionarLetra(letra));
                 letrasJugador.getChildren().add(botonFicha);
             }
         } else {
             System.err.println("letrasJugador is not initialized.");
         }
+
     }
 
     private void seleccionarLetra(String letra) {
@@ -154,16 +135,13 @@ public class PartidaController {
                 if (fila != null && col != null) {
                     // Crear un nuevo texto con la letra seleccionada
                     int puntaje = juego.saco.obtenerPuntajeDeLaLetra(letraSeleccionada);
-                    Text baseLetter = new Text(letraSeleccionada);
-                    baseLetter.setStyle("-fx-font-size: 18;");
-                    Text subscriptScore = new Text(String.valueOf(puntaje));
-                    subscriptScore.setStyle("-fx-font-size: 10; -fx-translate-y: 5;");
-                    TextFlow textFlow = new TextFlow(baseLetter, subscriptScore);
-                    textFlow.setTextAlignment(TextAlignment.CENTER);
+                    Text texto = new Text(letraSeleccionada + " (" + puntaje + ")");
+
+                    texto.setStyle("-fx-font-weight: bold;");
 
                     // Crear un StackPane para contener el texto
                     StackPane celda = new StackPane();
-                    celda.getChildren().add(textFlow);
+                    celda.getChildren().add(texto );
 
                     // Reemplazar el Label con el StackPane en el GridPane
                     tablero.getChildren().remove(clickedLabel);
@@ -179,8 +157,13 @@ public class PartidaController {
         } else {
             System.err.println("Clicked source is not a Label");
         }
+
     }
 
+    public void resaltarJugadorEnTurno(boolean esJugador1Turno) {
+        jugador1Info.setStyle(esJugador1Turno ? "-fx-background-color: lightgreen;" : "");
+        jugador2Info.setStyle(esJugador1Turno ? "" : "-fx-background-color: lightgreen;");
+    }
 
     @FXML
     protected void onEnviarClick() {

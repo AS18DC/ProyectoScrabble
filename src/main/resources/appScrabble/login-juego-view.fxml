@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.VBox?>
 
-<GridPane alignment="CENTER" style="-fx-background-color: rgba(143, 173, 50, 0.8);" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23.0.1" fx:controller="appScrabble.LoginJugadorController">
+<GridPane alignment="CENTER" style="-fx-background-color: rgba(143, 173, 50, 0.8);" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="appScrabble.LoginJugadorController">
     <padding>
         <Insets bottom="20" left="20" right="20" top="20" />
     </padding>
@@ -48,8 +48,8 @@
                 </rowConstraints>
             </GridPane>
 
-            <Button style="-fx-font-size: 14px; -fx-font-weight: bold; -fx-background-color: #68A042; -fx-text-fill: #14241B; -fx-background-radius: 10px;" fx:id="sortearTurnoButton" text="Sortear Turno" onAction="#onSortearTurnoClick"/>
-            <Button onAction="#onIniciarJuegoClick" style="-fx-font-size: 14px; -fx-font-weight: bold; -fx-background-color: #68A042; -fx-text-fill: #14241B; -fx-background-radius: 10px;" text="Iniciar Juego" />
+            <Button fx:id="sortearTurnoButton" onAction="#onSortearTurnoClick" style="-fx-font-size: 14px; -fx-font-weight: bold; -fx-background-color: #68A042; -fx-text-fill: #14241B; -fx-background-radius: 10px;" text="Sortear Turno" />
+            <Button defaultButton="true" onAction="#onIniciarJuegoClick" style="-fx-font-size: 14px; -fx-font-weight: bold; -fx-background-color: #68A042; -fx-text-fill: #14241B; -fx-background-radius: 10px;" text="Iniciar Juego" />
 
         </VBox>
     </HBox>
